@@ -1,3 +1,4 @@
+
 #include<iostream>
 #include<fstream>
 #include<string>
@@ -8,14 +9,12 @@ int main (){
 	ofstream dest;
 	source.open("cheerbook.txt");
 	dest.open("cheerbook_copy.txt");
-	
-    string textline;
-    dest << "-------------------- BOOM ---------------------\n";
-    while(getline(source,textline)){
-        dest << textline << "\n" ;
-    }
-    dest << "-------------------- HA!! ---------------------";
-
+	string xd;
+	cout << "-------------------- BOOM ---------------------\n";
+	while(getline(source,xd)){
+		cout << xd << endl;
+	}
+	cout << "-------------------- HA!! ---------------------";
     source.close();
     dest.close();
 	return 0;
